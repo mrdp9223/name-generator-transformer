@@ -2,7 +2,7 @@ from generate_names import load_names, build_vocab, NameGeneratorTransformer, ge
 import torch
 
 def main():
-    print("Sanskrit Name Generator Demo")
+    print("-------------Sanskrit Name Generator Demo----------------")
     print("===========================\n")
     
     # Load the model and vocabulary
