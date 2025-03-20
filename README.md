@@ -11,42 +11,7 @@ A deep learning model that generates Sanskrit names using a Transformer-based ar
 - Early stopping and validation to prevent overfitting
 - Handles Sanskrit diacritical marks appropriately
 
-## Technical Details
 
-### Transformer Architecture
-This project implements a modified Transformer architecture optimized for character-level generation:
-
-1. **Self-Attention Mechanism**
-   - Multi-head attention with 4 heads allows the model to capture different types of character relationships
-   - Each head can focus on different aspects (e.g., consonant patterns, vowel harmony)
-   - Scaled dot-product attention with masking to prevent looking at future tokens
-
-2. **Position Encoding**
-   - Learnable positional encodings instead of fixed sinusoidal
-   - Allows model to learn position-dependent character patterns specific to Sanskrit
-
-3. **Model Dimensions**
-   - Embedding dimension: 32 (optimized for character-level modeling)
-   - Number of attention heads: 4 (allows diverse feature capture)
-   - Number of transformer layers: 2 (balanced between capacity and efficiency)
-   - Feedforward dimension: 64 (2x embedding size for feature transformation)
-   - Context window size: 10 characters (captures local patterns while maintaining efficiency)
-
-### Training Strategy
-
-1. **Data Processing**
-   - Unicode normalization for consistent character representation
-   - Special handling of Sanskrit diacritical marks
-   - Dynamic context window with padding for efficient batching
-
-2. **Optimization**
-   - Adam optimizer with learning rate 0.005
-   - Early stopping with patience=5 to prevent overfitting
-   - Temperature-based sampling for controlled randomness in generation
-
-3. **Loss Function**
-   - Cross-entropy loss at character level
-   - Masked to ignore padding tokens
 
 ## Requirements
 
