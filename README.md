@@ -19,15 +19,10 @@ A deep learning model that generates Sanskrit names using a Transformer-based ar
 - PyTorch
 - Unicode support for Sanskrit text
 
-## Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/sanskrit-name-generator.git
-cd sanskrit-name-generator
 ```
 
-2. Install the required packages:
+Install the required packages:
 ```bash
 py -m pip install -r requirements.txt
 ```
@@ -66,29 +61,3 @@ The name generator uses a Transformer-based architecture with:
 - Early stopping patience: 5 epochs
 - Train/Validation split: 80/20
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change for my understanding and improvement. 
-
-## License
-
-[MIT License](LICENSE)
-
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@software{sanskrit_name_generator,
-  author = {Your Name},
-  title = {Sanskrit Name Generator},
-  year = {2024},
-  publisher = {GitHub},
-  url = {https://github.com/yourusername/sanskrit-name-generator}
-}
-```
-
-## Acknowledgments
-
-- Thanks to contributors and maintainers
-- Special thanks to the Sanskrit linguistics community
